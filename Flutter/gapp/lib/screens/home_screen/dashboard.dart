@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:gapp/screens/login_screen/login.dart';
+import 'package:gapp/screens/quick_alert_screen/alert_screen.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -40,7 +41,13 @@ class _DashboardState extends State<Dashboard> {
             ),
             const SizedBox(height: 30),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => Quick_Alert(),
+                  ),
+                );
+              },
               child: Text('Quick Alert Screen'),
             ),
             const SizedBox(height: 30),
