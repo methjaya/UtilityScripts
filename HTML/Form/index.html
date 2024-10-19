@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Meta Tags Start =================================================================================-->
+	<meta name="title" content="Malaka Inn - Your Perfect Vacation Home!">
+	<meta name="description" content="Welcome to Malaka Inn: Your Ideal Vacation Home in Bandarawela, Sri Lanka. Experience Safari Adventures and Exceptional Customer Satisfaction. Book Now for an Unforgettable Stay!">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Malaka Inn - Your Perfect Vacation Home!">
+	<meta property="og:description" content="Welcome to Malaka Inn: Your Ideal Vacation Home in Bandarawela, Sri Lanka. Experience Safari Adventures and Exceptional Customer Satisfaction. Book Now for an Unforgettable Stay!">
+	<meta property="og:image" content="./images/preview.webp">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:title" content="Malaka Inn - Your Perfect Vacation Home!">
+	<meta name="twitter:description" content="Welcome to Malaka Inn: Your Ideal Vacation Home in Bandarawela, Sri Lanka. Experience Safari Adventures and Exceptional Customer Satisfaction. Book Now for an Unforgettable Stay!">
+	<meta name="twitter:image" content="./images/preview.webp">
+	<!--=================================================================================== Meta Tags End -->
+
+	<title>Malaka Inn - Your Perfect Vacation Home!</title>
+
+	<link rel="stylesheet" href="output.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="preload" href="output.css" as="style" type="text/css">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" type="text/css" crossorigin>
+
+	<link rel="icon" href="./images/logo.svg">
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Fredoka', sans-serif;
+			/* For Firefox */
+			scrollbar-width: thin;
+		}
+
+		html{
+			color: #ECECEC;
+			background: #121B21;
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- MESSAGE FORM START =====================================================================-->
+	<div class="h-screen w-full flex items-center justify-center">
+
+		<div class="w-[90%] mb-[-20px] justify-between bg-[#162630] rounded-[8px] flex items-center flex-row">
+
+			<div class="w-[50%] h-[650px]">
+				<img class="h-full w-full rounded-l-[8px] object-cover" src="./images/formImage.png">
+			</div>
+
+			<div class="h-[650px] w-[70%] flex items-center justify-center">
+
+				<form class="flex items-center justify-center flex-col h-full w-[95%] gap-[30px]" id="messageForm" method="POST">
+
+					<div class="w-[85%] flex items-center justify-center flex-col">
+						<label class="text-[18px] text-left w-full mb-[12px]" for="Name">Full Name:</label>
+						<input class="p-[10px] px-[12px] w-full text-[16px] rounded-[8px] bg-[#B2B9BD] border-2 border-[#162630] outline-none focus:bg-[#ECECEC] focus:border-2 focus:border-[#0097EC]" type="text" name="Name" title="Required" placeholder="Your Full Name" required="">
+					</div>
+					<div class="w-[85%] flex items-center justify-center flex-col">
+						<label class="text-[18px] text-left w-full mb-[12px]" for="Email">Email Address:</label>
+						<input class="p-[10px] px-[12px] w-full text-[16px] rounded-[8px] bg-[#B2B9BD] border-2 border-[#162630] outline-none focus:bg-[#ECECEC] focus:border-2 focus:border-[#0097EC]" type="email" name="Email" title="Required" placeholder="Your Email Address" required="">
+					</div>
+					<div class="w-[85%] flex items-center justify-center flex-col">
+						<label class="text-[18px] text-left w-full mb-[12px]" for="Message">Message:</label>
+						<textarea class="p-[10px] px-[12px] w-full h-[200px] text-[16px] rounded-[8px] bg-[#B2B9BD] border-2 border-[#162630] outline-none resize-none focus:bg-[#ECECEC] focus:border-2 focus:border-[#0097EC]" name="Message" title="Required" placeholder="Your Message..." required=""></textarea>
+					</div>
+					<div class="w-[90%] py-[20px] flex items-center justify-center flex-col">
+						<button class="p-[8px] px-[15px] text-[#ECECEC] bg-[#0097EC] font-normal rounded-[8px] border-2 border-[#0097EC] uppercase transition duration-300 hover:bg-[#007AC0] hover:cursor-pointer hover:transition" type="submit">Submit</button>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!--======================================================================= MESSAGE FORM END -->
+
+</body>
+
+</html>
