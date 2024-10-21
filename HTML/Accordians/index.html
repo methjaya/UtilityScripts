@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#CD3131">
+
+	<title>Accordians</title>
+
+	<link rel="stylesheet" href="output.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="preload" href="output.css" as="style" type="text/css">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" type="text/css" crossorigin>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Fredoka', sans-serif;
+			/* For Firefox */
+			scrollbar-width: thin;
+		}
+
+		/* SCROLLBAR PROPERTIES START ========================================= */
+		*::-webkit-scrollbar{
+			width: 7px;
+		}
+		*::-webkit-scrollbar-track{
+			background: transparent;
+		}
+		*::-webkit-scrollbar-thumb{
+			background-color: #ababab;
+		}
+		*::-webkit-scrollbar-thumb:hover{
+			background-color: #8f8f8f;
+		}
+		*::-webkit-scrollbar-thumb:active{
+			background-color: #7a7a7a;
+		}
+		/* =========================================== SCROLLBAR PROPERTIES END */
+
+		html{
+			color: #ECECEC;
+			background: #161616;
+			scroll-behavior: smooth;
+		}
+
+		.serviceLink[open] .serviceCard{
+			background: #404040;
+			border-radius: 10px 10px 0 0;
+			transition: 0s;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="w-full py-[10px] flex justify-center items-center">
+		<div class="w-[90%] py-[70px] flex justify-center items-center flex-col">
+			<h2 class="text-[18px] text-[#E73636] font-normal w-full">Faqs</h2>
+
+			<div class="flex flex-row justify-between items-start w-full mt-[10px] mb-[50px]">
+				<h3 class="text-[35px] leading-[1.1] font-normal width50">Frequently Asked Questions</h3>
+			</div>
+
+			<div class="flex justify-center items-center flex-col gap-[15px] w-full">
+				<details class="serviceLink flex justify-center items-center w-full">
+					<summary class="serviceCard h-[60px] py-[8px] px-[25px] rounded-[10px] bg-[#242424] gap-[20px] cursor-pointer hover:bg-[#404040] transition duration-[300ms] flex justify-between items-center">
+						What is your full name? <i class="fa-solid fa-chevron-down text-[#E73636]"></i>
+					</summary>
+
+					<div class="h-auto py-[30px] px-[25px] rounded-b-[10px] bg-[#242424]">
+						<p>My full name is John Doe.</p>
+					</div>
+				</details>
+
+				<details class="serviceLink flex justify-center items-center w-full">
+					<summary class="serviceCard h-[60px] py-[8px] px-[25px] rounded-[10px] bg-[#242424] gap-[20px] cursor-pointer hover:bg-[#404040] transition duration-[300ms] flex justify-between items-center">
+						What are your hobbies? <i class="fa-solid fa-chevron-down text-[#E73636]"></i>
+					</summary>
+
+					<div class="h-auto py-[30px] px-[25px] rounded-b-[10px] bg-[#242424]">
+						<p>My hobbies include reading, writing, and coding.</p>
+					</div>
+				</details>
+
+				<details class="serviceLink flex justify-center items-center w-full">
+					<summary class="serviceCard h-[60px] py-[8px] px-[25px] rounded-[10px] bg-[#242424] gap-[20px] cursor-pointer hover:bg-[#404040] transition duration-[300ms] flex justify-between items-center">
+						What is your favorite color? <i class="fa-solid fa-chevron-down text-[#E73636]"></i>
+					</summary>
+
+					<div class="h-auto py-[30px] px-[25px] rounded-b-[10px] bg-[#242424]">
+						<p>My favorite color is blue.</p>
+					</div>
+				</details>
+
+				<details class="serviceLink flex justify-center items-center w-full">
+					<summary class="serviceCard h-[60px] py-[8px] px-[25px] rounded-[10px] bg-[#242424] gap-[20px] cursor-pointer hover:bg-[#404040] transition duration-[300ms] flex justify-between items-center">
+						What is your favorite food? <i class="fa-solid fa-chevron-down text-[#E73636]"></i>
+					</summary>
+
+					<div class="h-auto py-[30px] px-[25px] rounded-b-[10px] bg-[#242424]">
+						<p>My favorite food is pizza.</p>
+					</div>
+				</details>
+
+				<details class="serviceLink flex justify-center items-center w-full">
+					<summary class="serviceCard h-[60px] py-[8px] px-[25px] rounded-[10px] bg-[#242424] gap-[20px] cursor-pointer hover:bg-[#404040] transition duration-[300ms] flex justify-between items-center">
+						What is your favorite movie? <i class="fa-solid fa-chevron-down text-[#E73636]"></i>
+					</summary>
+
+					<div class="h-auto py-[30px] px-[25px] rounded-b-[10px] bg-[#242424]">
+						<p>My favorite movie is The Shawshank Redemption.</p>
+					</div>
+				</details>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
